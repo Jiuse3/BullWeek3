@@ -8,10 +8,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
 
+import { ListaComponent } from './components/lista/lista.component';
+
+
+import { PostsDetailsComponent } from './posts-details/posts-details.component';
+import { MatCardModule } from '@angular/material/card';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+
+    FormComponent,
+
+    ListaComponent,
+
+    PostsDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -19,7 +32,8 @@ import { FormComponent } from './components/form/form.component';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
