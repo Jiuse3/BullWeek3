@@ -23,7 +23,7 @@ import { ListaComponent } from './components/lista/lista.component';
 
 
 import { PostsDetailsComponent } from './posts-details/posts-details.component';
-import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -32,7 +32,7 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
 
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
 
 
     FormComponent,

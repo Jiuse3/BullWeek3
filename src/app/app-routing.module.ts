@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './component/Homepage/home/home.component';
 import { FormComponent } from './components/form/form.component';
 
 
@@ -24,6 +25,10 @@ component: FormComponent
 {
   path: 'form/:id',
   component: FormComponent
+},
+{
+  path: 'home',
+  component: HomeComponent
 }
 ]
 
