@@ -14,8 +14,14 @@ export class PostService {
       .get<Post[]>('https://jsonplaceholder.typicode.com/posts')
       .pipe(map((ris) => ris));
   }
+  post(newUser: Partial<Post>) {
+    return this.http.post<Post>('https://jsonplaceholder.typicode.com/posts', newUser);
+}
 
-  delete(id: number) {
-    return this.http.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
-  }
+getDet(id:number) {
+  return this.http
+    .get<Post>(`https://jsonplaceholder.typicode.com/posts/${id}`)
+
+}
+
 }
