@@ -18,4 +18,12 @@ export class PostService {
   delete(id: number) {
     return this.http.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
   }
+
+  getDet(id:number){
+    return this.http
+    .get<Post>(`https://jsonplaceholder.typicode.com/posts/${id}`)
+
+
+    }
+
 }
