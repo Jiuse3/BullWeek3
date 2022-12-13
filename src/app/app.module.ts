@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { FormComponent } from './components/form/form.component';
 
 import { ListaComponent } from './components/lista/lista.component';
 
@@ -18,7 +19,9 @@ import { MatCardModule } from '@angular/material/card';
   declarations: [
     AppComponent,
 
-    ListaComponent
+    FormComponent,
+
+    ListaComponent,
 
     PostsDetailsComponent,
 
