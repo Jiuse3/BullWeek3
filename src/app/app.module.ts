@@ -11,11 +11,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/Homepage/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { PostsDetailsComponent } from './posts-details/posts-details.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { InterceptorInterceptor } from './interceptors/interceptor.interceptor';
 
 
 @NgModule({
@@ -26,6 +29,8 @@ import { PostsDetailsComponent } from './posts-details/posts-details.component';
     FormComponent,
     ListaComponent,
     PostsDetailsComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,13 @@ import { PostsDetailsComponent } from './posts-details/posts-details.component';
     FormsModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

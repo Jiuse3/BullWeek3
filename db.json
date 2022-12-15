@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "name": "Youssoufa seydi",
+      "email": "jou-inter@hotmail.it",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "anish💕",
+      "email": "jou-inter@hotmail.it",
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "login": [
+    {
+      "email": "jou-inter@hotmail.it",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "email": "jou-inter@hotmail.it",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "jou-inter@hotmail.it",
+      "password": "123456",
+      "id": 3
+    }
+  ]
+}
