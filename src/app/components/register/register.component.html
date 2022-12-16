@@ -14,6 +14,6 @@
   <label for="exampleInputPassword1" class="form-label text-light">Password*</label>
   <input type="password" class="form-control" id="password" name = "password" ngModel required>
 </div>
-<button type="submit" class="btn btn-danger"> Registrati</button>
+<button type="submit" class="btn btn-danger"[disabled]="!registerForm.valid"> Registrati</button>
 </form>
 </div>

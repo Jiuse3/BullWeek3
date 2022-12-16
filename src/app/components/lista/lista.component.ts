@@ -32,4 +32,10 @@ export class ListaComponent implements OnInit {
     });
   }
 
+  conferma(id:number){
+    if(confirm("Sei sicuro di voler cancellare?")==true){
+      this.cancellaPost(id)
+    }
+  }
+
 }

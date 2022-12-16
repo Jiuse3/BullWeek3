@@ -36,14 +36,14 @@ export class AuthService {
 
 
 
-  path: string = '  http://localhost:4201/api/'
+  path: string = '    http://localhost:3000'
   constructor(private http: HttpClient, private router: Router) {
     this.restore()
     //this.logged=true;
    }
 
   signUp(user: {email: string, password:string, name: string}){
-    return this.http.post<AuthData>(`${this.path}/users`, user);
+    return this.http.post<AuthData>(`${this.path}/register`, user);
   }
 
 
