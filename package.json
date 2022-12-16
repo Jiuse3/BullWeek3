@@ -8,11 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "full-stack": "concurrently \"npm run backend\" \"npm run start\"",
-<<<<<<< Updated upstream
+
     "backend": "npx json-server-auth db.json --delay 1000 "
-=======
-    "backend": "json-server-auth --watch db.json --routes routes.json --port 3000 --delay 1000 "
->>>>>>> Stashed changes
+
   },
   "private": true,
   "dependencies": {

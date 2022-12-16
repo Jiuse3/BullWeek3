@@ -36,7 +36,8 @@ export class AuthService {
 
 
 
-  path: string = 'http://localhost:3000'
+  path: string = ' http://localhost:3000'
+
   constructor(private http: HttpClient, private router: Router) {
     this.restore()
     //this.logged=true;
