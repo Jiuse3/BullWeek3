@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "full-stack": "concurrently \"npm run backend\" \"npm run start\"",
+<<<<<<< Updated upstream
     "backend": "npx json-server-auth db.json --delay 1000 "
+=======
+    "backend": "json-server-auth --watch db.json --routes routes.json --port 3000 --delay 1000 "
+>>>>>>> Stashed changes
   },
   "private": true,
   "dependencies": {
@@ -24,6 +28,8 @@
     "@angular/router": "^14.2.0",
     "@auth0/angular-jwt": "^5.1.1",
     "concurrently": "^7.6.0",
+    "json-server-auth": "^2.1.0",
+    "jsonwebtoken": "^8.5.1",
     "ng-animate": "^2.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {  map, tap } from 'rxjs/operators';
-import {BehaviorSubject} from 'rxjs'
+import { map, tap } from 'rxjs/operators';
+import { BehaviorSubject } from 'rxjs'
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 
@@ -10,7 +10,7 @@ export interface AuthData {
   accessToken: string,
   user : {
       id: number,
-      email: string,
+      email: string
   }
 }
 export interface SignupData {
