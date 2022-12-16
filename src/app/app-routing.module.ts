@@ -7,6 +7,7 @@ import { PostsDetailsComponent } from './posts-details/posts-details.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './auth.guard';
+import { LogoutComponent } from './components/logout/logout.component';
 const routes: Routes = [
   {
     path: "login",
@@ -30,6 +31,10 @@ const routes: Routes = [
     path: 'form',
     component: FormComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: "logout",
+    component: LogoutComponent
   },
 
   {
