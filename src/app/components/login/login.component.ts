@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
     this.authSrv.isLoggedIn$.pipe(tap(u=> u=true ))
 
-    this.authSrv.signIn(f.value).pipe(tap(res => {localStorage.setItem("UserData", JSON.stringify(res.user)),this.authSrv.logged=true;})).subscribe(()=>this.router.navigate(['/home']));
+    this.authSrv.signIn(f.value).pipe(tap(res => {localStorage.setItem("UserData", JSON.stringify(res.user)),this.authSrv.logged=true;})).subscribe(()=>this.router.navigate(['/']));
 
   }
 
